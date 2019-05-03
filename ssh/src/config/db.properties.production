@@ -1,0 +1,8 @@
+db.driver=legacy.jdbc.db2.Db2forJccDriverWrapper
+db.url=jdbc:db2_legacy_wrapper://140.124.13.173:50000/NTUT
+db.database=LEARNING
+db.user=ntuttest
+db.pass=Ntut@test!
+db.testWhileIdle=true
+db.testOnBorrow=false
+db.testOnReturn=false

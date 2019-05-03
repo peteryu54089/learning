@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="legacy_db2_driver_wrapper:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/legacy_db2_driver_wrapper_jar</output-path>
+    <root id="archive" name="legacy_db2_driver_wrapper.jar">
+      <element id="module-output" name="legacy_db2_driver_wrapper" />
+    </root>
+  </artifact>
+</component>

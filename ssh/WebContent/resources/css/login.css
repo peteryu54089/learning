@@ -1,0 +1,291 @@
+/*
+ * Specific styles of signin component
+ */
+/*
+ * General styles
+ */
+body, html {
+    min-height: 100%;
+    /*background-image: linear-gradient(rgb(104, 145, 162), rgb(12, 97, 33));*/
+    background: #e9ebee;
+    color: #1d2129;
+}
+
+.error-template {
+    padding: 40px 15px;
+    text-align: center;
+}
+
+.error-actions {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.error-actions .btn {
+    margin-right: 10px;
+}
+
+.card-container.card {
+    max-width: 350px;
+    padding: 40px 40px;
+}
+
+.btn {
+    font-weight: 700;
+    height: 36px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+
+/*
+ * Card component
+ */
+.card {
+    background-color: #F7F7F7;
+    /* just in case there no content*/
+    padding: 20px 25px 30px;
+    margin: 0 auto 25px;
+    margin-top: 50px;
+    /* shadows and rounded borders */
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.profile-img-card {
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 10px;
+    display: block;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+/*
+ * Form styles
+ */
+.profile-name-card {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0 0;
+    min-height: 1em;
+}
+
+.reauth-email {
+    display: block;
+    color: #404040;
+    line-height: 2;
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.form-signin #inputID,
+.form-signin #inputPassword {
+    direction: ltr;
+    height: 44px;
+    font-size: 16px;
+}
+
+.form-signin input[type=email],
+.form-signin input[type=password],
+.form-signin input[type=text],
+.form-signin button {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    z-index: 1;
+    position: relative;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.form-signin .form-control:focus {
+    border-color: rgb(104, 145, 162);
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgb(104, 145, 162);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgb(104, 145, 162);
+}
+
+.btn.btn-signin {
+    /*background-color: #4d90fe; */
+    background-color: rgb(104, 145, 162);
+    /* background-color: linear-gradient(rgb(104, 145, 162), rgb(12, 97, 33));*/
+    padding: 0px;
+    font-weight: 700;
+    font-size: 14px;
+    height: 36px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: none;
+    -o-transition: all 0.218s;
+    -moz-transition: all 0.218s;
+    -webkit-transition: all 0.218s;
+    transition: all 0.218s;
+}
+
+.btn.btn-signin:hover,
+.btn.btn-signin:active,
+.btn.btn-signin:focus {
+    background-color: rgb(12, 97, 33);
+}
+
+.forgot-password {
+    color: rgb(104, 145, 162);
+}
+
+.forgot-password:hover,
+.forgot-password:active,
+.forgot-password:focus {
+    color: rgb(12, 97, 33);
+}
+
+.course-record-table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+.course-record-table td {
+    table-layout: fixed;
+}
+
+
+.course-record-table th {
+    text-align: center;
+}
+
+.course-record-table .cell-created-at {
+    word-break: break-all;
+    text-align: center;
+    width: 150px;
+}
+
+
+.course-record-table .cell-file-cnt {
+    text-align: right;
+    width: 100px;
+}
+
+.course-record-table .cell-file {
+    word-break: break-all;
+}
+
+.course-record-table .cell-submit {
+    width: 150px;
+}
+
+.course-record-table .cell-verify-date {
+    width: 230px;
+}
+
+.course-record-table .cell-verify-status {
+}
+
+.course-record-table .cell-op {
+    width: 240px;
+}
+
+header {
+    margin: 0 0 1rem;
+    overflow: hidden;
+    text-align: left;
+}
+
+header #schoolBanner {
+    line-height: 0;
+    pointer-events: none;
+}
+
+#announcement-list {
+    padding: 0;
+    list-style: none;
+}
+
+#announcement-list li {
+    padding-bottom: .5rem;
+    border-bottom: 1px solid #EEE;
+    padding-top: .5rem;
+    overflow: hidden;
+    position: relative;
+}
+
+#announcement-list li.hasMore .content:after {
+    display: block;
+    text-align: right;
+    color: blue;
+    cursor: pointer;
+    content: "Read More...";
+}
+
+#announcement-list li.hasMore.showFull .content:after {
+    display: none;
+}
+
+
+.css-box {
+    position: relative;
+}
+
+.css-box:before {
+    content: "";
+    display: block;
+    margin-top: 100%; /* initial ratio of 1:1*/
+}
+
+/* Other ratios */
+.css-box.ratio2_1:before {
+    margin-top: 50%;
+}
+
+.css-box.ratio1_2:before {
+    margin-top: 200%;
+}
+
+.css-box.ratio4_3:before {
+    margin-top: 75%;
+}
+
+.css-box.ratio16_9:before {
+    margin-top: 56.25%;
+}
+
+.css-box > .content {
+    /* Positioning */
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: #fff;
+}
+
+input[type=checkbox][disabled] + label {
+    color: #dadada;
+}
+
+table {
+    word-break: break-all;
+}
+
+label.required:before {
+    content: "*";
+    padding-right: .5em;
+    font-size: 1.25rem;
+    color: red;
+    font-weight: bold;
+}

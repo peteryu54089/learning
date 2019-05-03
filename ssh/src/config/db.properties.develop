@@ -1,0 +1,8 @@
+db.driver=legacy.jdbc.db2.Db2forJccDriverWrapper
+db.url=jdbc:db2_legacy_wrapper://127.0.0.1:50000/NTUT:retrieveMessagesFromServerOnGetMessage=true;
+db.database=test
+db.user=test
+db.pass=test
+db.testWhileIdle=false
+db.testOnBorrow=true
+db.testOnReturn=false

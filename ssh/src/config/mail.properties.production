@@ -1,0 +1,8 @@
+mail.smtp.host = smtp.ntut.edu.tw
+mail.smtp.auth = true
+mail.smtp.username = @ntut.edu.tw
+mail.smtp.password = P@ssw0rd
+mail.smtp.sender = user@ntut.edu.tw
+mail.smtp.sender_name = 歷程系統
+mail.debug = false
+mail.force_send_to =

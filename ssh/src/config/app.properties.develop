@@ -1,0 +1,2 @@
+# dev or ldap
+app.login_method = dev

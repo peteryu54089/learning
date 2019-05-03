@@ -1,0 +1,28 @@
+﻿CREATE OR REPLACE VIEW
+  STU_CLASS_INFO_WITH_TUTOR
+  (
+   TERM_YEAR,
+   TERM_SEM,
+   PK,
+   REG_NO,
+   IDNO,
+   CNAME,
+   CLS_CODE,
+   CLS_CNAME,
+   CLS_NO,
+   GRADE,
+   STAFF_CODE
+    ) AS
+  (
+    SELECT
+      SC.*,
+      TUTOR.STAFF_CODE
+    FROM
+      STU_CLASS_INFO SC
+        LEFT JOIN
+      HS_STU_DOCENT TUTOR
+      ON
+            SC.TERM_YEAR = TUTOR.SBJ_YEAR
+          AND SC.TERM_SEM = TUTOR.SBJ_SEM
+          AND SC.CLS_CODE = TUTOR.CLS_CODE
+  );

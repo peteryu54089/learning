@@ -1,0 +1,7 @@
+mail.smtp.host = smtp.ntut.edu.tw
+mail.smtp.username = Username
+mail.smtp.password = Password
+mail.smtp.sender = sender@ntut.edu.tw
+mail.smtp.sender_name = 我是寄信人
+mail.debug = true
+mail.force_send_to =

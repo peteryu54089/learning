@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>課程審核通知</title>
+</head>
+<body style="font: 20px/1.25 'Microsoft JhengHei', sans-serif">
+<h1>課程成果審核通知</h1>
+<p>{name}教師您好：</p>
+<p>在您任教過的課程中，有學生提交了課程成果，請前往網站查看詳細資訊。</p>
+<p>課程如下：</p>
+<table style="width: 100%; border-collapse: collapse;" border="1" cellspacing="0" cellpadding="8"
+       bordercolor="#ddd">
+    <thead>
+    <tr bgcolor="#4CAF50" style="color:#FFF">
+        <th width="15%">學期</th>
+        <th width="15%">課程編號</th>
+        <th width="50%">課程名稱</th>
+        <th width="20%">數量</th>
+    </tr>
+    </thead>
+    <tbody style="background: #F2F2F2">
+    <!-- tr template start -->
+    <tr style="background: #F2F2F2">
+        <td>{year}-{sem}</td>
+        <td>{course_num}</td>
+        <td>{course_name}</td>
+        <td align="right">{cnt}</td>
+    </tr>
+    <!-- tr template end -->
+    </tbody>
+</table>
+</body>
+</html>
